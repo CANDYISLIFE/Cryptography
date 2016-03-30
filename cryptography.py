@@ -15,5 +15,8 @@ userInput = input("Enter e to encrypt, d to decrypt, or q to quit: ")
     
 if userInput != "e" and userInput != "d" and userInput != "q":
     print("Did not understand command, try again. ")
-if     
+elif userInput = "q":
+    print("Goodbye!")
+
+    
 
