@@ -13,7 +13,7 @@ associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .
 
 userInput = input("Enter e to encrypt, d to decrypt, or q to quit: ")
     
-if input != e and input != d and input != q:
+if input != "e" and input != "d" and input != "q":
     print("Did not understand command, try again. ")
     
 
