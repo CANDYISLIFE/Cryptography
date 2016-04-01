@@ -21,7 +21,7 @@ elif userInput == "e":
     userString = input("Message: ")
     userKey = input("Key: ")
 elif userInput == "d":
-    userCyphertext = ("Message")
-    cyphertextKey = ("Key:")
+    userCyphertext = input("Message")
+    cyphertextKey = input("Key:")
     
 
