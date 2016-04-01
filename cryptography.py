@@ -15,8 +15,13 @@ userInput = input("Enter e to encrypt, d to decrypt, or q to quit: ")
     
 if userInput != "e" and userInput != "d" and userInput != "q":
     print("Did not understand command, try again. ")
-elif userInput = "q":
+elif userInput == "q":
     print("Goodbye!")
-
+elif userInput == "e":
+    userString = input("Message: ")
+    userKey = input("Key: ")
+elif userInput == "d":
+    userCyphertext = ("Message")
+    cyphertextKey = ("Key:")
     
 
