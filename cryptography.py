@@ -1,7 +1,7 @@
 """
 cryptography.py
 Author: Billy
-Credit: <list sources used, if any>
+Credit: Mr Dennison, Hayden, 
 
 Assignment:
 
@@ -31,7 +31,7 @@ elif userInput == "e":
     zippedNumbers = zip(stringInt, keyInt)
     for p in zippedNumbers:
         encryptedNumbers = encryptedNumbers + (p[0] + p[1])
-        
+    for t in encryptedNumbers    
         
     
     
