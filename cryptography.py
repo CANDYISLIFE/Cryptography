@@ -21,8 +21,7 @@ elif userInput == "e":
     userString = input("Message: ")
     userKey = input("Key: ")
     for i in userString:
-        int(associations.find(i))
-        print(i)
+        print(associations.find(i))
 elif userInput == "d":
     userCyphertext = input("Message: ")
     cyphertextKey = input("Key:")
