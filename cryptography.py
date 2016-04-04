@@ -26,7 +26,7 @@ elif userInput == "e":
     for i in userString:
         stringInt = stringInt + associations.find(i)
     for e in userKey:
-        keyInt = ketIny + associations.find(e)
+        keyInt = keyInt + associations.find(e)
 elif userInput == "d":
     userCyphertext = input("Message: ")
     cyphertextKey = input("Key:")
