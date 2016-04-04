@@ -27,7 +27,8 @@ elif userInput == "e":
         stringInt = stringInt + associations.find(i)
     for e in userKey:
         keyInt = keyInt + associations.find(e)
-    zip(stringInt, keyInt)
+    zippedNumbers = zip(stringInt, keyInt)
+    
 elif userInput == "d":
     userCyphertext = input("Message: ")
     cyphertextKey = input("Key:")
@@ -35,3 +36,4 @@ elif userInput == "d":
 
 print(stringInt)
 print(keyInt)
+print(zippedNumbers)
