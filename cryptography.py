@@ -12,6 +12,9 @@ See the detailed requirements at https://github.com/HHS-IntroProgramming/Cryptog
 associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
 
 userInput = input("Enter e to encrypt, d to decrypt, or q to quit: ")
+
+stringInt = []
+keyInt = []
     
 if userInput != "e" and userInput != "d" and userInput != "q":
     print("Did not understand command, try again. ")
@@ -21,11 +24,13 @@ elif userInput == "e":
     userString = input("Message: ")
     userKey = input("Key: ")
     for i in userString:
-        stringInt = associations.find(i)
+        stringInt = stringInt + associations.find(i)
     for e in userKey:
-        keyInt = associations.find(e)
+        keyInt = ketIny + associations.find(e)
 elif userInput == "d":
     userCyphertext = input("Message: ")
     cyphertextKey = input("Key:")
     
 
+print(stringInt)
+print(keyInt)
