@@ -20,6 +20,9 @@ elif userInput == "q":
 elif userInput == "e":
     userString = input("Message: ")
     userKey = input("Key: ")
+    for i in userString:
+        associations.find(i)
+        print(i)
 elif userInput == "d":
     userCyphertext = input("Message: ")
     cyphertextKey = input("Key:")
