@@ -1,7 +1,7 @@
 """
 cryptography.py
 Author: Billy
-Credit: Mr Dennison, Hayden, 
+Credit: Mr Dennison, Hayden, Adam
 
 Assignment:
 
