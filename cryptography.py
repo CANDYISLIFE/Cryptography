@@ -31,17 +31,19 @@ elif userInput == "e":
     zippedNumbers = zip(stringInt, keyInt)
     for p in zippedNumbers:
         encryptedNumbers = encryptedNumbers + (p[0] + p[1])
-    for t in encryptedNumbers    
+    for t in encryptedNumbers:
+        print(t)
         
     
     
 elif userInput == "d":
     userCyphertext = input("Message: ")
     cyphertextKey = input("Key:")
-    
+"""    
 print(encryptedNumbers)
 print(stringInt)
 print(keyInt)
 print(zippedNumbers)
 for x in zippedNumbers:
     print(x)
+"""    
