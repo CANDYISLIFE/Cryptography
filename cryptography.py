@@ -16,6 +16,7 @@ userInput = input("Enter e to encrypt, d to decrypt, or q to quit: ")
 stringInt = []
 keyInt = []
 encryptedNumbers = []
+encryptedLetters = ""
     
 if userInput != "e" and userInput != "d" and userInput != "q":
     print("Did not understand command, try again. ")
@@ -32,7 +33,7 @@ elif userInput == "e":
     for p in zippedNumbers:
         encryptedNumbers = encryptedNumbers + (p[0] + p[1])
     for t in encryptedNumbers:
-        print(associations[t])
+        encryptedLetters = encryptedLetters + associations[t]
         
     
     
