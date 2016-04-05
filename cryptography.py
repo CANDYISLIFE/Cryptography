@@ -29,7 +29,8 @@ elif userInput == "e":
         stringInt = stringInt + associations.find(i)
     for e in userKey:
         keyInt = keyInt + associations.find(e)
-#        if len(keyInt) <= len(stringInt):
+        if len(keyInt) <= len(stringInt):
+            keyInt = keyInt + keyInt
             
         
         zippedNumbers = zip(stringInt, keyInt)
@@ -41,8 +42,7 @@ elif userInput == "e":
 elif userInput == "d":
     userCyphertext = input("Message: ")
     cyphertextKey = input("Key:")
-    
-print(keyInt)
+
 """    
 print(encryptedNumbers)
 print(stringInt)
