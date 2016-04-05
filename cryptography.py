@@ -29,8 +29,9 @@ elif userInput == "e":
         stringInt = stringInt + associations.find(i)
     for e in userKey:
         keyInt = keyInt + associations.find(e)
-        if len(keyInt) <= len(stringInt):
-            keyInt = keyInt + keyInt
+        for h in len(keyInt):
+            if len(keyInt) <= len(stringInt):
+                keyInt = keyInt + keyInt
             
         
         zippedNumbers = zip(stringInt, keyInt)
