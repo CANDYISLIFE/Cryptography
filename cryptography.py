@@ -31,7 +31,7 @@ elif userInput == "e":
         keyInt = keyInt + associations.find(e)
         if len(keyInt) <= len(stringInt):
         
-    zippedNumbers = zip(stringInt, keyInt)
+        zippedNumbers = zip(stringInt, keyInt)
     for p in zippedNumbers:
         encryptedNumbers = encryptedNumbers + (p[0] + p[1])
     for t in encryptedNumbers:
