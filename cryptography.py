@@ -29,7 +29,7 @@ elif userInput == "e":
         stringInt = stringInt + associations.find(i)
     for e in userKey:
         keyInt = keyInt + associations.find(e)
-        for h in len(keyInt):
+        for h in keyInt:
             if len(keyInt) <= len(stringInt):
                 keyInt = keyInt + keyInt
             
