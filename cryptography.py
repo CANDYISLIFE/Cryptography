@@ -42,7 +42,7 @@ elif userInput == "d":
     userCyphertext = input("Message: ")
     cyphertextKey = input("Key:")
     
- print(keyInt)
+print(keyInt)
 """    
 print(encryptedNumbers)
 print(stringInt)
