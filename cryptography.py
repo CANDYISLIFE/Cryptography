@@ -29,10 +29,10 @@ elif userInput == "e":
         stringInt = stringInt + associations.find(i)
     for e in userKey:
         keyInt = keyInt + associations.find(e)
-        while len(keyInt) <= len(stringInt):
-            keyInt = keyInt + keyInt
+    while len(keyInt) <= len(stringInt):
+        keyInt = keyInt + keyInt
         
-        zippedNumbers = zip(stringInt, keyInt)
+    zippedNumbers = zip(stringInt, keyInt)
     for p in zippedNumbers:
         encryptedNumbers = encryptedNumbers + (p[0] + p[1])
     for t in encryptedNumbers:
