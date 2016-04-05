@@ -32,7 +32,7 @@ elif userInput == "e":
     for p in zippedNumbers:
         encryptedNumbers = encryptedNumbers + (p[0] + p[1])
     for t in encryptedNumbers:
-        print(index[t])
+        print(associations[t])
         
     
     
