@@ -40,6 +40,8 @@ elif userInput == "e":
 elif userInput == "d":
     userCyphertext = input("Message: ")
     cyphertextKey = input("Key:")
+    
+print(encryptedLetters)    
 """    
 print(encryptedNumbers)
 print(stringInt)
