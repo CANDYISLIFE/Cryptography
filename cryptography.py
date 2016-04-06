@@ -46,7 +46,8 @@ elif userInput == "d":
         cyphertextNums = cyphertextNums + associations.find(q)
     for y in cyphertextKey:
         cypherkeyNums = cypherkeyNums + associations.find(y)
-        
+    while len(cyphertextNums) >= len(cypherkeyNums):
+        cypherkeyNums = cypherkeyNums + cypherkeyNums
 
 print(cyphertextNums)
 print(cypherkeyNums)
