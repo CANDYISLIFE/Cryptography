@@ -51,7 +51,7 @@ elif userInput == "d":
         cypherkeyNums = cypherkeyNums + cypherkeyNums
     zippedCypher = zip(cyphertextNums, cypherkeyNums)
     for r in zippedCypher:
-        decryptedNums = decryptedNums + (p[0] - p[1])
+        decryptedNums = decryptedNums + (r[0] - r[1])
 
 print(decryptedNums)
 """    
