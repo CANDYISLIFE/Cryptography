@@ -43,7 +43,7 @@ elif userInput == "e":
     print(encryptedLetters) 
 elif userInput == "d":
     userCyphertext = input("Message: ")
-    cyphertextKey = input("Key:")
+    cyphertextKey = input("Key: ")
     for q in userCyphertext:
         cyphertextNums = cyphertextNums + associations.find(q)
     for y in cyphertextKey:
