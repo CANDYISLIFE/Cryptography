@@ -17,8 +17,9 @@ stringInt = []
 keyInt = []
 encryptedNumbers = []
 encryptedLetters = ""
-cyphertextNums = ""
-    
+cyphertextNums = []
+cypherkeyNums = []
+   
 if userInput != "e" and userInput != "d" and userInput != "q":
     print("Did not understand command, try again. ")
 elif userInput == "q":
@@ -43,6 +44,11 @@ elif userInput == "d":
     cyphertextKey = input("Key:")
     for q in userCyphertext:
         cyphertextNums = cyphertextNums + associations.find(q)
+    for y in cyphertextKey:
+        cypherkeyNums = cypherkeyNums + associations.find(y)
+        
+
+print(cyphertextNums)
 
 """    
 print(encryptedNumbers)
@@ -51,4 +57,4 @@ print(keyInt)
 print(zippedNumbers)
 for x in zippedNumbers:
     print(x)
-"""    
+"""
