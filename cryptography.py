@@ -20,6 +20,7 @@ encryptedLetters = ""
 cyphertextNums = []
 cypherkeyNums = []
 decryptedNums = []
+decryptedLetters = ""
    
 if userInput != "e" and userInput != "d" and userInput != "q":
     print("Did not understand command, try again. ")
@@ -52,8 +53,10 @@ elif userInput == "d":
     zippedCypher = zip(cyphertextNums, cypherkeyNums)
     for r in zippedCypher:
         decryptedNums = decryptedNums + (r[0] - r[1])
+    for h in decryptedNums:
+        decryptedLetters = decryptedLetters + associations.find(h)
 
-print(decryptedNums)
+print(decryptedLetters)
 """    
 print(encryptedNumbers)
 print(stringInt)
