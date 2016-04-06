@@ -54,7 +54,7 @@ elif userInput == "d":
     for r in zippedCypher:
         decryptedNums = decryptedNums + (r[0] - r[1])
     for h in decryptedNums:
-        decryptedLetters = decryptedLetters + associations.find(h)
+        decryptedLetters = decryptedLetters +associations[h]
 
 print(decryptedLetters)
 """    
