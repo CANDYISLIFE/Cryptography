@@ -49,7 +49,7 @@ elif userInput == "d":
         
 
 print(cyphertextNums)
-
+print(cypherkeyNums)
 """    
 print(encryptedNumbers)
 print(stringInt)
