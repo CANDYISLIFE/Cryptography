@@ -53,7 +53,7 @@ elif userInput == "d":
     for r in zippedCypher:
         decryptedNums = decryptedNums + (p[0] - p[1])
 
-
+print(decryptedNums)
 """    
 print(encryptedNumbers)
 print(stringInt)
