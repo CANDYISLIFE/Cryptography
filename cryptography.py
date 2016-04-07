@@ -30,7 +30,7 @@ elif userInput == "e":
     userString = input("Message: ")
     userKey = input("Key: ")
     for i in userString:
-        stringInt = stringInt.append(associations.find(i))
+        stringInt = stringInt + associations.find(i)
     for e in userKey:
         keyInt = keyInt + associations.find(e)
     while len(keyInt) <= len(stringInt):
