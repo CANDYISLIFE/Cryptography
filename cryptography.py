@@ -32,7 +32,7 @@ elif userInput == "e":
     for i in userString:
         stringInt = stringInt + associations.find(i)
     for e in userKey:
-        keyInt = keyInt + associations.find(e)
+        keyInt = keyInt.append(associations.find(e))
     while len(keyInt) <= len(stringInt):
         keyInt = keyInt + keyInt
     zippedNumbers = zip(stringInt, keyInt)
