@@ -52,7 +52,7 @@ elif userInput == "d":
         cypherkeyNums = cypherkeyNums + cypherkeyNums
     zippedCypher = zip(cyphertextNums, cypherkeyNums)
     for r in zippedCypher:
-        decryptedNums = decryptedNums + (r[0] - r[1])
+        decryptedNums.append((r[0] - r[1]))
     for h in decryptedNums:
         decryptedLetters = decryptedLetters + associations[h]
 else:
