@@ -22,8 +22,6 @@ cypherkeyNums = []
 decryptedNums = []
 decryptedLetters = ""
 end="false"
-while end=="false":
-    input("Enter e to encrypt, d to decrypt, or q to quit: ")
 
     if userInput != "e" and userInput != "d" and userInput != "q":
         print("Did not understand command, try again. ")
@@ -60,6 +58,9 @@ while end=="false":
         for h in decryptedNums:
             decryptedLetters = decryptedLetters + associations[h]
     print(decryptedLetters)
+
+while end=="false":
+    input("Enter e to encrypt, d to decrypt, or q to quit: ")    
 """    
 print(encryptedNumbers)
 print(stringInt)
