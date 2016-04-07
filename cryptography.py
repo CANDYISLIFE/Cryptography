@@ -30,14 +30,14 @@ elif userInput == "e":
     userString = input("Message: ")
     userKey = input("Key: ")
     for i in userString:
-        stringInt = stringInt + associations.find(i)
+        stringInt = stringInt.append(associations.find(i))
     for e in userKey:
         keyInt = keyInt.append(associations.find(e))
     while len(keyInt) <= len(stringInt):
         keyInt = keyInt + keyInt
     zippedNumbers = zip(stringInt, keyInt)
     for p in zippedNumbers:
-        encryptedNumbers = encryptedNumbers + (p[0] + p[1])
+        encryptedNumbers = encryptedNumbers.append((p[0] + p[1]))
     for t in encryptedNumbers:
         encryptedLetters = encryptedLetters + associations[t]
     print(encryptedLetters) 
@@ -45,9 +45,9 @@ elif userInput == "d":
     userCyphertext = input("Message: ")
     cyphertextKey = input("Key: ")
     for q in userCyphertext:
-        cyphertextNums = cyphertextNums + associations.find(q)
+        cyphertextNums = cyphertextNums.append(associations.find(q))
     for y in cyphertextKey:
-        cypherkeyNums = cypherkeyNums + associations.find(y)
+        cypherkeyNums = cypherkeyNums.append(associations.find(y))
     while len(cyphertextNums) >= len(cypherkeyNums):
         cypherkeyNums = cypherkeyNums + cypherkeyNums
     zippedCypher = zip(cyphertextNums, cypherkeyNums)
