@@ -30,7 +30,7 @@ elif userInput == "e":
     userString = input("Message: ")
     userKey = input("Key: ")
     for i in userString:
-        stringInt = stringInt.append(associations.find(i))
+        stringInt.append(associations.find(i))
     for e in userKey:
         keyInt = keyInt.append(associations.find(e))
     while len(keyInt) <= len(stringInt):
@@ -55,6 +55,8 @@ elif userInput == "d":
         decryptedNums = decryptedNums + (r[0] - r[1])
     for h in decryptedNums:
         decryptedLetters = decryptedLetters + associations[h]
+else:
+    input("Enter e to encrypt, d to decrypt, or q to quit: ")
 
 print(decryptedLetters)
 """    
