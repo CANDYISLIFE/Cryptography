@@ -30,7 +30,7 @@ elif userInput == "e":
     userString = input("Message: ")
     userKey = input("Key: ")
     for i in userString:
-        stringInt = stringInt + associations.find(i)
+        stringInt = stringInt.append(associations.find(i))
     for e in userKey:
         keyInt = keyInt + associations.find(e)
     while len(keyInt) <= len(stringInt):
@@ -54,7 +54,7 @@ elif userInput == "d":
     for r in zippedCypher:
         decryptedNums = decryptedNums + (r[0] - r[1])
     for h in decryptedNums:
-        decryptedLetters = decryptedLetters +associations[h]
+        decryptedLetters = decryptedLetters + associations[h]
 
 print(decryptedLetters)
 """    
