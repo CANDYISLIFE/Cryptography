@@ -60,7 +60,7 @@ while end == "false":
             if h < 0:
                 h = h + 85
             decryptedLetters = decryptedLetters + associations[h]
-    print(decryptedLetters)
+        print(decryptedLetters)
 
 
     
