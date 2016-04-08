@@ -58,13 +58,15 @@ elif userInput == "d":
     for h in decryptedNums:
         if h <= 0:
             h = h + 85
-        decryptedLetters = decryptedLetters + associations[h]
+        else:
+            decryptedLetters = decryptedLetters + associations[h]
 print(decryptedLetters)
-
+'''
 if userInput == "q":
     end = "true"
 while end == "false":
     input("Enter e to encrypt, d to decrypt, or q to quit: ")    
+'''
 """    
 print(encryptedNumbers)
 print(stringInt)
