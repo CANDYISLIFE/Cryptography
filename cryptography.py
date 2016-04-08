@@ -57,6 +57,8 @@ elif userInput == "d":
         decryptedNums.append((r[0] - r[1]))
     for h in decryptedNums:
         decryptedLetters = decryptedLetters + associations[h]
+        if h <= 0:
+            h = h + 85
 print(decryptedLetters)
 
 while end=="false":
