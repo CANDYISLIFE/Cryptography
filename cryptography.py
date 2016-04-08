@@ -62,7 +62,7 @@ elif userInput == "d":
 print(decryptedLetters)
 
 if userInput = "q":
-    end = "true"
+    then end = "true"
 while end=="false":
     input("Enter e to encrypt, d to decrypt, or q to quit: ")    
 """    
