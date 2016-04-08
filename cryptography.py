@@ -27,7 +27,7 @@ if userInput != "e" and userInput != "d" and userInput != "q":
     print("Did not understand command, try again. ")
 elif userInput == "q":
     print("Goodbye!")
-    end="true"
+    end = "true"
 elif userInput == "e":
     userString = input("Message: ")
     userKey = input("Key: ")
@@ -61,9 +61,9 @@ elif userInput == "d":
             h = h + 85
 print(decryptedLetters)
 
-if userInput = "q":
-    then end = "true"
-while end=="false":
+if userInput == "q":
+    end = "true"
+while end == "false":
     input("Enter e to encrypt, d to decrypt, or q to quit: ")    
 """    
 print(encryptedNumbers)
