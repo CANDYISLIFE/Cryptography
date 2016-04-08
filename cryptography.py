@@ -64,12 +64,13 @@ elif userInput == "d":
         else:
             decryptedLetters = decryptedLetters + associations[h]
 print(decryptedLetters)
-'''
+
 if userInput == "q":
     end = "true"
 while end == "false":
-    input("Enter e to encrypt, d to decrypt, or q to quit: ")    
-'''
+    input("Enter e to encrypt, d to decrypt, or q to quit: ")
+    
+
 """    
 print(encryptedNumbers)
 print(stringInt)
