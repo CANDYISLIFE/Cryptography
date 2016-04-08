@@ -41,10 +41,9 @@ elif userInput == "e":
     for p in zippedNumbers:
         encryptedNumbers.append((p[0] + p[1]))
     for t in encryptedNumbers:
-        if t >= 85:
+        if t > 85:
             t = t - 85
-        else:
-            encryptedLetters = encryptedLetters + associations[t]
+        encryptedLetters = encryptedLetters + associations[t]
     print(encryptedLetters) 
 elif userInput == "d":
     userCyphertext = input("Message: ")
@@ -59,10 +58,9 @@ elif userInput == "d":
     for r in zippedCypher:
         decryptedNums.append((r[0] - r[1]))
     for h in decryptedNums:
-        if h <= 0:
+        if h < 0:
             h = h + 85
-        else:
-            decryptedLetters = decryptedLetters + associations[h]
+        decryptedLetters = decryptedLetters + associations[h]
 print(decryptedLetters)
 
 if userInput == "q":
