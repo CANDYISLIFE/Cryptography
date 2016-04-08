@@ -61,6 +61,8 @@ elif userInput == "d":
             h = h + 85
 print(decryptedLetters)
 
+if userInput = "q":
+    end = "true"
 while end=="false":
     input("Enter e to encrypt, d to decrypt, or q to quit: ")    
 """    
