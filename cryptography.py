@@ -11,16 +11,16 @@ See the detailed requirements at https://github.com/HHS-IntroProgramming/Cryptog
 """
 associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
 
-stringInt = []
-keyInt = []
-encryptedNumbers = []
-encryptedLetters = ""
-cyphertextNums = []
-cypherkeyNums = []
-decryptedNums = []
-decryptedLetters = ""
 end="false"
 while end == "false":
+    stringInt = []
+    keyInt = []
+    encryptedNumbers = []
+    encryptedLetters = ""
+    cyphertextNums = []
+    cypherkeyNums = []
+    decryptedNums = []
+    decryptedLetters = ""
     userInput = input("Enter e to encrypt, d to decrypt, or q to quit: ")
     if userInput != "e" and userInput != "d" and userInput != "q":
         print("Did not understand command, try again. ")
